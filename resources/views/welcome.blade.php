@@ -65,7 +65,7 @@
         </div>
       </section>
       <section class="py-32">
-        <div class="container">
+        <div class="container mx-auto text-center">
           <div
             class="inline-flex items-center rounded-full border px-2.5 py-0.5 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground mb-4 max-w-full text-sm font-normal lg:mb-10 lg:py-2 lg:pl-2 lg:pr-5">
             <span class="mr-2 flex size-8 shrink-0 items-center justify-center rounded-full bg-zinc-100"><svg
@@ -83,14 +83,14 @@
           <h1 class="mb-6 text-4xl font-bold leading-none tracking-tighter text-center md:text-[7vw] lg:text-8xl">
             Streamline your workflow experience.
           </h1>
-          <p class="max-w-2xl text-zinc-600 md:text-[2vw] lg:text-xl">
+          <p class="max-w-2xl text-zinc-600 md:text-[2vw] lg:text-xl m-auto">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolor assumenda voluptatem
             nemo magni a maiores aspernatur.
           </p>
         </div>
       </section>
       <section class="py-32">
-        <div class="container max-w-7xl">
+        <div class="container max-w-7xl mx-auto text-center">
           <div class="flex items-center justify-between text-sm">
             <div class="flex items-center gap-1 text-zinc-600">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -107,7 +107,7 @@
                 <path d="M21 9v2"></path>
                 <path d="M3 14v1"></path>
               </svg>
-              <p>Utilities</p>
+              <p>Previous Projects</p>
             </div>
             <a href="#" class="hover:text-gray-800 hover:underline">Learn more<svg xmlns="http://www.w3.org/2000/svg"
                 width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -135,48 +135,48 @@
               </div>
             </div>
             <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
-              <img src="/images/placeholders/minima/placeholder-2.jpg" alt="Apps" class="aspect-video w-full object-cover" />
+              <img src="{{ asset('images/reservia.jpg') }}" alt="Html and CSS image" class="aspect-video w-full object-cover" />
               <div class="p-5">
-                <p class="mb-1 font-medium">Apps</p>
+                <p class="mb-1 font-medium">Reservia</p>
                 <p class="text-zinc-600">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 </p>
               </div>
             </div>
             <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
-              <img src="/images/placeholders/minima/placeholder-3.jpg" alt="APIs" class="aspect-video w-full object-cover" />
+              <img src="{{ asset('images/to-do-list.jpg') }}" alt="ToDoList Image" class="aspect-video w-full object-cover" />
               <div class="p-5">
-                <p class="mb-1 font-medium">APIs</p>
+                <p class="mb-1 font-medium">To-Do List</p>
                 <p class="text-zinc-600">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 </p>
               </div>
             </div>
             <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
-              <img src="/images/placeholders/minima/placeholder-4.jpg" alt="Plugins"
+              <img src="{{ asset('images/ohmyfood.jpg') }}" alt="OhMyFood Logo"
                 class="aspect-video w-full object-cover" />
               <div class="p-5">
-                <p class="mb-1 font-medium">Plugins</p>
+                <p class="mb-1 font-medium">OhMyFood Food Website</p>
                 <p class="text-zinc-600">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 </p>
               </div>
             </div>
             <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
-              <img src="/images/placeholders/minima/placeholder-5.jpg" alt="Extensions"
+              <img src="{{ asset('images/1-SEO.webp') }}" alt="SEO Image"
                 class="aspect-video w-full object-cover" />
               <div class="p-5">
-                <p class="mb-1 font-medium">Extensions</p>
+                <p class="mb-1 font-medium">GoMike Designs</p>
                 <p class="text-zinc-600">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 </p>
               </div>
             </div>
             <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
-              <img src="/images/placeholders/minima/placeholder-6.jpg" alt="Widgets"
-                class="aspect-video w-full object-cover" />
+              <img src="{{ asset('images/Mern.png') }}" alt="Mern Logo"
+                class="aspect-video w-full object-contain" />
               <div class="p-5">
-                <p class="mb-1 font-medium">Widgets</p>
+                <p class="mb-1 font-medium">Groupomania Fullstack App</p>
                 <p class="text-zinc-600">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 </p>
@@ -193,8 +193,8 @@
             </svg>
             <span class="ml-3 text-xl">Tailblocks</span>
           </a>
-          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020 Tailblocks —
-            <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@knyttneve</a>
+          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"> <?php echo date('Y'); ?>
+            <a href="https://www.linkedin.com/in/ciprian-pop-9a5169157/" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@Ciprian</a>
           </p>
           <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
             <a class="text-gray-500">
