@@ -24,10 +24,11 @@
       <div class="container mx-auto text-center">
           <div x-data="{ open: false }" class="flex flex-col p-5 md:flex-row md:items-center md:justify-between">
             <div class="flex flex-row items-center justify-between lg:justify-start">
-              <a href="#"
-                class="text-lg font-bold tracking-tighter text-blue-600 transition duration-500 ease-in-out lg:pr-8">
-                wickedblocks
-              </a>
+              <div class="w-20 h-20 rounded-full bg-support-200 p-1 m-1 hover:bg-primary avatar">
+                <a href="#nav">
+                    <img src="./images/avatar.PNG" alt="avatar" class="rounded-full bg-main-bg">
+                </a>
+            </div>
               <button class="rounded-lg focus:outline-none md:hidden" @click="open = !open">
                 <svg fill="currentColor" viewBox="0 0 20 20" class="size-8">
                   <path x-show="!open" fill-rule="evenodd"
@@ -42,21 +43,21 @@
             <nav :class="{'flex': open, 'hidden': !open}" class="hidden grow flex-col md:flex md:flex-row md:justify-end">
               <ul class="list-none space-y-2 lg:inline-flex lg:items-center lg:space-y-0">
                 <li>
-                  <a href="#"
+                  <a href="#projects"
                     class="border-b-2 border-transparent px-2 py-6 text-sm leading-[22px] text-gray-500 hover:border-blue-600 hover:text-blue-500 md:px-3 lg:px-6">
-                    All <span class="hidden lg:inline"> templates </span>
+                    Projects
                   </a>
                 </li>
                 <li>
-                  <a href="#"
+                  <a href="mailto:ciprianvlad888@gmail.com?subject=The%20subject%20of%20the%20mail"
                     class="border-b-2 border-transparent px-2 py-6 text-sm leading-[22px] text-gray-500 hover:border-blue-600 hover:text-blue-500 md:px-3 lg:px-6">
-                    FAQ
+                    Email me!
                   </a>
                 </li>
                 <li>
-                  <a href="#"
+                  <a href="media/13.Ciprian_Pop.pdf"
                     class="border-b-2 border-transparent px-2 py-6 text-sm leading-[22px] text-gray-500 hover:border-blue-600 hover:text-blue-500 md:px-3 lg:px-6">
-                    Free <span class="hidden lg:inline">Templates </span>
+                    Download My CV
                   </a>
                 </li>
               </ul>
@@ -123,7 +124,7 @@
               cupiditate atque maxime alias eaque repellendus perferendis, nemo repudiandae.
             </p>
           </div>
-          <div class="mt-11 grid w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <div class="mt-11 grid w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3" id="projects">
             <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
               <img src="{{ asset('images/logo.webp') }}" alt="Alexia Salon"
                 class="aspect-video max-w-full object-cover" />
