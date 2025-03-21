@@ -19,7 +19,7 @@
     <title>Ciprian Pop's Portfolio</title>
 </head>
 
-<body class="bg-main-bg">
+<body class="bg-gray-400">
     <section>
       <div class="container mx-auto text-center">
           <div x-data="{ open: false }" class="flex flex-col p-5 md:flex-row md:items-center md:justify-between">
@@ -55,7 +55,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="media/13.Ciprian_Pop.pdf"
+                  <a href="media/C_V_Pop.pdf"
                     class="border-b-2 border-transparent px-2 py-6 text-sm leading-[22px] text-gray-500 hover:border-blue-600 hover:text-blue-500 md:px-3 lg:px-6">
                     Download My CV
                   </a>
@@ -68,25 +68,27 @@
       <section class="py-32">
         <div class="container mx-auto text-center">
           <div
-            class="inline-flex items-center rounded-full border px-2.5 py-0.5 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground mb-4 max-w-full text-sm font-normal lg:mb-10 lg:py-2 lg:pl-2 lg:pr-5">
-            <span class="mr-2 flex size-8 shrink-0 items-center justify-center rounded-full bg-zinc-100"><svg
-                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-bell size-4">
-                <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
-                <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
-              </svg></span>
-            <p class="truncate whitespace-nowrap">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eaque distinctio iusto
-              voluptas voluptatum sed!
-            </p>
-          </div>
-          <h1 class="mb-6 text-4xl font-bold leading-none tracking-tighter text-center md:text-[7vw] lg:text-8xl">
-            Streamline your workflow experience.
+          class="inline-flex items-center rounded-full border px-2.5 py-0.5 transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground mb-4 max-w-full text-sm font-normal lg:mb-10 lg:py-2 lg:pl-2 lg:pr-5">
+          <span class="mr-2 flex size-8 shrink-0 items-center justify-center rounded-full bg-zinc-100">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-smile size-4">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M8 15s1.5 2 4 2 4-2 4-2"></path>
+              <path d="M9 9h.01"></path>
+              <path d="M15 9h.01"></path>
+            </svg>
+          </span>
+          <p class="truncate whitespace-nowrap">
+            Hello there! I'm Ciprian Pop, and I'm a Web developer
+          </p>
+        </div>        
+          <h1 class="mb-6 text-4xl font-bold leading-none tracking-tighter text-center md:text-[7vw] lg:text-6xl">
+            Crafting Code, Fixing Bugs, Drinking Coffee ☕
           </h1>
           <p class="max-w-2xl text-zinc-600 md:text-[2vw] lg:text-xl m-auto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolor assumenda voluptatem
-            nemo magni a maiores aspernatur.
+            Professional web developer with a passion for creating user-friendly and visually appealing websites. With expertise in HTML, CSS, JavaScript, and various web development frameworks, I bring a wealth of technical skills to every project. 
+            My goal is to design and develop websites that meet the unique needs of each client and enhance their online presence.
           </p>
         </div>
       </section>
@@ -131,7 +133,8 @@
               <div class="p-5">
                 <p class="mb-1 font-medium">LA'Alexia</p>
                 <p class="text-zinc-600">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Fully built a beauty salon website for a client, using Booksy for appointments
+                  Using Laravel, TailwindCSS, JavaScript, GitHub, Devtools for SEO, hosting on GoDaddy and ploi.io for deployment
                 </p>
               </div>
             </div>
@@ -140,7 +143,9 @@
               <div class="p-5">
                 <p class="mb-1 font-medium">Reservia</p>
                 <p class="text-zinc-600">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Reservia website is designed to provide an optimal viewing and interaction experience on any device. 
+                  Whether you're using a desktop computer, tablet, or smartphone, our fully responsive website will automatically adjust to the screen size and resolution for seamless navigation and an enjoyable user experience.
+                  With a focus on mobile-first design, your website visitors can access all of the features and content on the go, anytime, anywhere.
                 </p>
               </div>
             </div>
@@ -149,7 +154,7 @@
               <div class="p-5">
                 <p class="mb-1 font-medium">To-Do List</p>
                 <p class="text-zinc-600">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  With Laravel as the PHP framework, MySQL for the database, and Tailwind CSS for styling, I've crafted a seamless experience for managing tasks.
                 </p>
               </div>
             </div>
@@ -159,7 +164,10 @@
               <div class="p-5">
                 <p class="mb-1 font-medium">OhMyFood Food Website</p>
                 <p class="text-zinc-600">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Ohmyfood is a new startup that wants to make a name for itself in the restaurant business. 
+                  The objective is to develop a 100% mobile-friendly site that lists the menus of gourmet restaurants. 
+                  In addition to having a classic reservation system, customers will be able to select the dishes they want for their meal so that they are ready when they arrive. 
+                  No more wait times in restaurants!
                 </p>
               </div>
             </div>
@@ -169,7 +177,9 @@
               <div class="p-5">
                 <p class="mb-1 font-medium">GoMike Designs</p>
                 <p class="text-zinc-600">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  GoMikeDesigns is a freelance web designer who lives in Atlanta. 
+                  Many local shops have outdated websites, so he approached a few and landed his first clients. 
+                  But now he would like potential customers to find him when they Google for local freelance web designers to hire.
                 </p>
               </div>
             </div>
@@ -179,7 +189,9 @@
               <div class="p-5">
                 <p class="mb-1 font-medium">Groupomania Fullstack App</p>
                 <p class="text-zinc-600">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  This project is a full-stack social media application that allows users to create an account, upload photos, and comment on other users' posts. 
+                  The application is built from scratch using ReactJS for the front-end, NodeJS and ExpressJS for the back-end, Multer for file uploads, 
+                  Bcrypt for password encryption, jsonwebtoken for authentication, and MySQL for the database.
                 </p>
               </div>
             </div>
