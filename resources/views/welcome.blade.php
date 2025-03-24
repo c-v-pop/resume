@@ -19,52 +19,45 @@
     <title>Ciprian Pop's Portfolio</title>
 </head>
 
-<body class="bg-gray-400">
-    <section>
-      <div class="container mx-auto text-center">
-          <div x-data="{ open: false }" class="flex flex-col p-5 md:flex-row md:items-center md:justify-between">
-            <div class="flex flex-row items-center justify-between lg:justify-start">
-              <div class="w-20 h-20 rounded-full bg-support-200 p-1 m-1 hover:bg-primary avatar">
-                <a href="#nav">
-                    <img src="./images/avatar.PNG" alt="avatar" class="rounded-full bg-main-bg">
-                </a>
-            </div>
-              <button class="rounded-lg focus:outline-none md:hidden" @click="open = !open">
-                <svg fill="currentColor" viewBox="0 0 20 20" class="size-8">
-                  <path x-show="!open" fill-rule="evenodd"
-                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                    clip-rule="evenodd"></path>
-                  <path x-show="open" fill-rule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    clip-rule="evenodd" style="display: none"></path>
-                </svg>
-              </button>
-            </div>
-            <nav :class="{'flex': open, 'hidden': !open}" class="hidden grow flex-col md:flex md:flex-row md:justify-end">
-              <ul class="list-none space-y-2 lg:inline-flex lg:items-center lg:space-y-0">
-                <li>
-                  <a href="#projects"
-                    class="border-b-2 border-transparent px-2 py-6 text-sm leading-[22px] text-gray-500 hover:border-blue-600 hover:text-blue-500 md:px-3 lg:px-6">
-                    Projects
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:ciprianvlad888@gmail.com?subject=The%20subject%20of%20the%20mail"
-                    class="border-b-2 border-transparent px-2 py-6 text-sm leading-[22px] text-gray-500 hover:border-blue-600 hover:text-blue-500 md:px-3 lg:px-6">
-                    Email me!
-                  </a>
-                </li>
-                <li>
-                  <a href="media/C_V_Pop.pdf"
-                    class="border-b-2 border-transparent px-2 py-6 text-sm leading-[22px] text-gray-500 hover:border-blue-600 hover:text-blue-500 md:px-3 lg:px-6">
-                    Download My CV
-                  </a>
-                </li>
-              </ul>
-            </nav>
+<body class="bg-white">
+  <section class="bg-card shadow-md rounded-lg p-6">
+    <div class="container mx-auto text-center">
+      <div x-data="{ open: false }" class="flex flex-col md:flex-row md:items-center md:justify-between">
+        <div class="flex items-center justify-between lg:justify-start">
+          <div class="w-20 h-20 rounded-full bg-support-200 p-1 m-1 hover:bg-primary transition duration-300 shadow-lg">
+            <a href="#nav">
+              <img src="./images/avatar.PNG" alt="avatar" class="rounded-full bg-main-bg border-4 border-primary shadow-md">
+            </a>
           </div>
+          <button class="rounded-lg focus:outline-none md:hidden" @click="open = !open">
+            <svg fill="currentColor" viewBox="0 0 20 20" class="size-8 text-primary">
+              <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+              <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" style="display: none"></path>
+            </svg>
+          </button>
         </div>
-      </section>
+        <nav :class="{'flex': open, 'hidden': !open}" class="hidden grow flex-col md:flex md:flex-row md:justify-end">
+          <ul class="list-none space-y-2 lg:inline-flex lg:items-center lg:space-y-0">
+            <li>
+              <a href="#projects" class="border-b-2 border-transparent px-4 py-3 text-sm font-medium text-gray-700 transition duration-300 hover:border-primary hover:text-primary md:px-5 lg:px-6">
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="mailto:ciprianvlad888@gmail.com?subject=The%20subject%20of%20the%20mail" class="border-b-2 border-transparent px-4 py-3 text-sm font-medium text-gray-700 transition duration-300 hover:border-primary hover:text-primary md:px-5 lg:px-6">
+                Email me!
+              </a>
+            </li>
+            <li>
+              <a href="media/C_V_Pop.pdf" class="border-b-2 border-transparent px-4 py-3 text-sm font-medium text-gray-700 transition duration-300 hover:border-primary hover:text-primary md:px-5 lg:px-6">
+                Download My CV
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
       <section class="py-32">
         <div class="container mx-auto text-center">
           <div
@@ -126,77 +119,79 @@
               cupiditate atque maxime alias eaque repellendus perferendis, nemo repudiandae.
             </p>
           </div>
-          <div class="mt-11 grid w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3" id="projects">
-            <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
-              <img src="{{ asset('images/logo.webp') }}" alt="Alexia Salon"
-                class="aspect-video max-w-full object-cover" />
+          <div class="mt-11 grid w-full grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3" id="projects">
+            <!-- Project Card Template -->
+            <div class="group rounded-lg border bg-white dark:bg-neutral-900 text-gray-800 dark:text-white shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+              <img src="{{ asset('images/alexia.webp') }}" alt="Alexia Salon" class="aspect-video w-full object-cover rounded-t-lg transition-transform duration-300 group-hover:scale-110" />
               <div class="p-5">
-                <p class="mb-1 font-medium">LA'Alexia</p>
-                <p class="text-zinc-600">
-                  Fully built a beauty salon website for a client, using Booksy for appointments
-                  Using Laravel, TailwindCSS, JavaScript, GitHub, Devtools for SEO, hosting on GoDaddy and ploi.io for deployment
+                <p class="mb-1 text-lg font-semibold text-blue-600 dark:text-blue-400">LA'Alexia Beauty Salon</p>
+                <p class="text-gray-700 dark:text-gray-300">
+                  Designed and developed a <span class="font-semibold text-blue-500 dark:text-blue-300">full-featured beauty salon website</span>, integrating 
+                  <span class="font-semibold">Booksy</span> for seamless appointment booking. Built with 
+                  <span class="font-semibold text-purple-600 dark:text-purple-400">Laravel</span>, 
+                  <span class="font-semibold text-teal-600 dark:text-teal-400">TailwindCSS</span>, and 
+                  <span class="font-semibold text-yellow-600 dark:text-yellow-400">JavaScript</span>.  
+                  <span class="block mt-2 text-sm text-gray-600 dark:text-gray-400">Deployed with <span class="font-semibold">Ploi.io</span>, hosted on <span class="font-semibold">GoDaddy</span>.</span>
                 </p>
               </div>
             </div>
-            <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
-              <img src="{{ asset('images/reservia.jpg') }}" alt="Html and CSS image" class="aspect-video w-full object-cover" />
+          
+            <div class="group rounded-lg border bg-white dark:bg-neutral-900 text-gray-800 dark:text-white shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+              <img src="{{ asset('images/reservia.webp') }}" alt="Reservia" class="aspect-video w-full object-cover rounded-t-lg transition-transform duration-300 group-hover:scale-110" />
               <div class="p-5">
-                <p class="mb-1 font-medium">Reservia</p>
-                <p class="text-zinc-600">
-                  Reservia website is designed to provide an optimal viewing and interaction experience on any device. 
-                  Whether you're using a desktop computer, tablet, or smartphone, our fully responsive website will automatically adjust to the screen size and resolution for seamless navigation and an enjoyable user experience.
-                  With a focus on mobile-first design, your website visitors can access all of the features and content on the go, anytime, anywhere.
+                <p class="mb-1 text-lg font-semibold text-green-600 dark:text-green-400">Reservia</p>
+                <p class="text-gray-700 dark:text-gray-300">
+                  A <span class="font-semibold text-green-500 dark:text-green-300">fully responsive website</span> ensuring an optimal viewing experience across devices.
+                  Designed with a <span class="font-semibold">mobile-first approach</span>, allowing users to seamlessly navigate and interact anytime, anywhere.
                 </p>
               </div>
             </div>
-            <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
-              <img src="{{ asset('images/to-do-list.jpg') }}" alt="ToDoList Image" class="aspect-video w-full object-cover" />
+          
+            <div class="group rounded-lg border bg-white dark:bg-neutral-900 text-gray-800 dark:text-white shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+              <img src="{{ asset('images/dolist.jpg') }}" alt="To-Do List" class="aspect-video w-full object-cover rounded-t-lg transition-transform duration-300 group-hover:scale-110" />
               <div class="p-5">
-                <p class="mb-1 font-medium">To-Do List</p>
-                <p class="text-zinc-600">
-                  With Laravel as the PHP framework, MySQL for the database, and Tailwind CSS for styling, I've crafted a seamless experience for managing tasks.
+                <p class="mb-1 text-lg font-semibold text-purple-600 dark:text-purple-400">To-Do List</p>
+                <p class="text-gray-700 dark:text-gray-300">
+                  Built using <span class="font-semibold text-purple-500 dark:text-purple-300">Laravel</span> with 
+                  <span class="font-semibold">MySQL</span> as the database and <span class="font-semibold text-teal-500 dark:text-teal-300">TailwindCSS</span> for styling, delivering a seamless task management experience.
                 </p>
               </div>
             </div>
-            <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
-              <img src="{{ asset('images/ohmyfood.jpg') }}" alt="OhMyFood Logo"
-                class="aspect-video w-full object-cover" />
+          
+            <div class="group rounded-lg border bg-white dark:bg-neutral-900 text-gray-800 dark:text-white shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+              <img src="{{ asset('images/ohmyfoodwebp.webp') }}" alt="OhMyFood" class="aspect-video w-full object-cover rounded-t-lg transition-transform duration-300 group-hover:scale-110" />
               <div class="p-5">
-                <p class="mb-1 font-medium">OhMyFood Food Website</p>
-                <p class="text-zinc-600">
-                  Ohmyfood is a new startup that wants to make a name for itself in the restaurant business. 
-                  The objective is to develop a 100% mobile-friendly site that lists the menus of gourmet restaurants. 
-                  In addition to having a classic reservation system, customers will be able to select the dishes they want for their meal so that they are ready when they arrive. 
-                  No more wait times in restaurants!
+                <p class="mb-1 text-lg font-semibold text-red-600 dark:text-red-400">OhMyFood</p>
+                <p class="text-gray-700 dark:text-gray-300">
+                  Developed a <span class="font-semibold text-red-500 dark:text-red-300">100% mobile-friendly</span> website for a food startup,
+                  listing gourmet restaurant menus with an innovative pre-order system to minimize wait times.
                 </p>
               </div>
             </div>
-            <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
-              <img src="{{ asset('images/1-SEO.webp') }}" alt="SEO Image"
-                class="aspect-video w-full object-cover" />
+          
+            <div class="group rounded-lg border bg-white dark:bg-neutral-900 text-gray-800 dark:text-white shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+              <img src="{{ asset('images/seo.jpg') }}" alt="GoMike SEO" class="aspect-video w-full object-cover rounded-t-lg transition-transform duration-300 group-hover:scale-110" />
               <div class="p-5">
-                <p class="mb-1 font-medium">GoMike Designs</p>
-                <p class="text-zinc-600">
-                  GoMikeDesigns is a freelance web designer who lives in Atlanta. 
-                  Many local shops have outdated websites, so he approached a few and landed his first clients. 
-                  But now he would like potential customers to find him when they Google for local freelance web designers to hire.
+                <p class="mb-1 text-lg font-semibold text-yellow-600 dark:text-yellow-400">GoMike Designs - SEO Optimization</p>
+                <p class="text-gray-700 dark:text-gray-300">
+                  Optimized <span class="font-semibold text-yellow-500 dark:text-yellow-300">SEO strategies</span> for a freelance web designer in Atlanta, improving meta tags, keyword placement, and site performance to enhance search rankings.
                 </p>
               </div>
             </div>
-            <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
-              <img src="{{ asset('images/Mern.png') }}" alt="Mern Logo"
-                class="aspect-video w-full object-contain" />
+          
+            <div class="group rounded-lg border bg-white dark:bg-neutral-900 text-gray-800 dark:text-white shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+              <img src="{{ asset('images/groupomania.jpg') }}" alt="Groupomania" class="aspect-video w-full object-cover rounded-t-lg transition-transform duration-300 group-hover:scale-110" />
               <div class="p-5">
-                <p class="mb-1 font-medium">Groupomania Fullstack App</p>
-                <p class="text-zinc-600">
-                  This project is a full-stack social media application that allows users to create an account, upload photos, and comment on other users' posts. 
-                  The application is built from scratch using ReactJS for the front-end, NodeJS and ExpressJS for the back-end, Multer for file uploads, 
-                  Bcrypt for password encryption, jsonwebtoken for authentication, and MySQL for the database.
+                <p class="mb-1 text-lg font-semibold text-indigo-600 dark:text-indigo-400">Groupomania Fullstack App</p>
+                <p class="text-gray-700 dark:text-gray-300">
+                  Developed a <span class="font-semibold text-indigo-500 dark:text-indigo-300">full-stack social media platform</span> using 
+                  <span class="font-semibold">ReactJS</span> (frontend), <span class="font-semibold">NodeJS & ExpressJS</span> (backend), and <span class="font-semibold">MySQL</span> (database).
+                  Implemented secure authentication and media uploads.
                 </p>
               </div>
             </div>
           </div>
-        </div>
+          
       </section>
       <footer class="text-gray-600 body-font">
         <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
