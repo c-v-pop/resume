@@ -69,7 +69,9 @@
           <span class="px-2 py-1 bg-blue-200 rounded">JavaScript</span>
           <span class="px-2 py-1 bg-blue-200 rounded">CSS</span>
           <span class="px-2 py-1 bg-blue-200 rounded">Website Optimization</span>
-          <span class="px-2 py-1 bg-blue-200 rounded">Google Analytics</span>
+          <span class="px-2 py-1 bg-blue-200 rounded">HTML</span>
+          <span class="px-2 py-1 bg-blue-200 rounded">Blade</span>
+          <span class="px-2 py-1 bg-blue-200 rounded">Hosting</span>
       </div>
       
       <h2 class="text-2xl font-semibold text-green-600 mt-6">Certifications</h2>
